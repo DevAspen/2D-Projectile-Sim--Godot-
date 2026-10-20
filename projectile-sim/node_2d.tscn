@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://3bly144k8uc7"]
+
+[ext_resource type="PackedScene" uid="uid://bpogtvn81o3eb" path="res://bullet.tscn" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1125772349]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=293041895]
+zoom = Vector2(50, 50)
+
+[node name="Bullet" parent="." unique_id=954376831 instance=ExtResource("1_wtcfe")]
+initialHeight = 15.0
+targetHeight = 1.6

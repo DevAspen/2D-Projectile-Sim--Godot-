@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bpogtvn81o3eb"]
+
+[ext_resource type="Script" uid="uid://bebtd084cq4os" path="res://bullet.gd" id="1_v7oki"]
+
+[node name="Bullet" type="RigidBody2D" unique_id=954376831]
+mass = 0.274
+gravity_scale = 0.0
+script = ExtResource("1_v7oki")
+initialAngle = -15.0
+
+[node name="BulletCollider" type="CollisionPolygon2D" parent="." unique_id=819295777]
+polygon = PackedVector2Array(0, 0, 4, 0, 6, -1, 4, -2, 0, -2)
+
+[node name="BulletMesh" type="Polygon2D" parent="BulletCollider" unique_id=1009316065]
+color = Color(0.50980395, 0.50980395, 0.50980395, 1)
+polygon = PackedVector2Array(0, 0, 4, 0, 6, -1, 4, -2, 0, -2)
+
+[node name="GravityVector" type="Line2D" parent="." unique_id=2041041340]
+points = PackedVector2Array(2, -1, 2, 1)
+width = 0.15
